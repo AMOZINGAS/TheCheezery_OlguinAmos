@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        app:srcCompat="@drawable/thecheezery"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondoW"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/letraBoton"
+            android:text="Welcome to the jungle" />
+
+        <TextView
+            android:id="@+id/textViewInformation"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textColor="@color/letraBoton"
+            android:text="Home of the most wonderful desserts ever seen (and tested) by the human being." />
+
+        <Button
+            android:id="@+id/startedButton"
+            android:layout_width="219dp"
+            android:layout_height="33dp"
+            android:textSize="15sp"
+            android:textColor="@color/letraBoton"
+            android:background="@drawable/button_rounded"
+            android:text="Get STARTED!" />
+
+    </LinearLayout>
+
+</LinearLayout>
