@@ -2,72 +2,76 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:paddingHorizontal="40dp"
     android:gravity="center"
     android:orientation="vertical"
+    tools:context=".register"
     >
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="215dp"
         android:layout_height="65dp"
-        app:srcCompat="@drawable/hello"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="-1dp"
-        android:layout_marginBottom="15dp"
+        android:src="@drawable/hello"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
         />
-    
-    <LinearLayout
-        android:layout_width="230dp"
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <EditText
-            android:layout_width="220dp"
-            android:layout_height="48dp"
-            android:hint="Name"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/input_margin"
+        />
+    <EditText
+        android:id="@+id/lastNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/input_margin"
+        />
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/input_margin"
+        />
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/input_margin"
         />
 
-        <EditText
-            android:layout_width="220dp"
-            android:layout_height="48dp"
-            android:hint="Last Name"
-            />
-        <EditText
-            android:layout_width="220dp"
-            android:layout_height="48dp"
-            android:hint="E-Mail"
-            />
-
-        <EditText
-            android:layout_width="220dp"
-            android:layout_height="48dp"
-            android:hint="Password"
-            />
-
-    </LinearLayout>
     <CheckBox
         android:id="@+id/checkBox"
-        android:layout_width="230dp"
-        android:layout_marginTop="15dp"
-        android:layout_height="48dp"
-        android:textColor="@color/gray"
-        android:layout_marginBottom="70dp"
-        android:text="I have read and accept terms and conditions of The Cheezery " />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textStyle="italic"
+        />
 
 
     <Button
         android:id="@+id/startedButton"
         android:layout_width="219dp"
         android:layout_height="33dp"
-        android:textSize="15sp"
-        android:textColor="@color/letraBoton"
-        android:background="@drawable/button_rounded"
-        android:text="sing in" />
+        android:background="@drawable/round_button"
+        android:text="@string/sign_in"
+        android:textColor="@color/dusty_white"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        />
 
 
 

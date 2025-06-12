@@ -8,28 +8,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_register)
+
+        val button: Button = findViewById(R.id.startedButton)
+
+        button.setOnClickListener{
 
 
-            val getStarted: Button = findViewById(R.id.startedButton)
+            var intent: Intent = Intent(this, ActivityMenu::class.java)
+            startActivity(intent)
 
-            getStarted.setOnClickListener{
-
-                var intent: Intent = Intent(this, RegisterActivity::class.java)
-
-                startActivity(intent)
-
-            }
 
         }
-
-
-
-
-
-
-}class RegisterActivity
+    }
+}
