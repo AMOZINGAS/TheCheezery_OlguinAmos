@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+
             val getStarted: Button = findViewById(R.id.startedButton)
 
             getStarted.setOnClickListener{
