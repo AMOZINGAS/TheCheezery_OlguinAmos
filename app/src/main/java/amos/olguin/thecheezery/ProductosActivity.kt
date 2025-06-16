@@ -1,6 +1,7 @@
 package amos.olguin.thecheezery
 
 import android.content.Context
+import android.media.Image
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,6 +22,9 @@ class ProductosActivity : AppCompatActivity() {
     var sweets = ArrayList<Product>()
     var salties = ArrayList<Product>()
 
+
+    val image: ImageView = findViewById(R.id.imageView)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -31,15 +35,19 @@ class ProductosActivity : AppCompatActivity() {
         when (tipo) {
             1 -> {
                 agregarProductoCold()
+                image.setImageResource(R.drawable.cold_drinks)
             }
             2 -> {
                 agregarProductosHot()
+                image.setImageResource(R.drawable.hot_drinks)
             }
             3 -> {
                 agregarProductosSweet()
+                image.setImageResource(R.drawable.sweets)
             }
             4 -> {
                 agregarProductosSaltie()
+                image.setImageResource(R.drawable.salties)
             }
         }
 
