@@ -20,36 +20,33 @@ class ActivityMenu : AppCompatActivity() {
         var btnSweet: Button = findViewById(R.id.buttonSweet) as Button
         var btnSalties: Button = findViewById(R.id.buttonSalties) as Button
 
-
+        val intent: Intent = Intent(this, ProductosActivity::class.java)
 
         btnCold.setOnClickListener{
 
-            var intent: Intent = Intent(this, ProductosActivity::class.java)
-            intent.putExtra("ColdDrinks", 1)
+
+            intent.putExtra("tipoProducto", 1)
             startActivity(intent)
 
         }
 
         btnHot.setOnClickListener{
 
-            var intent: Intent = Intent(this, ProductosActivity::class.java)
-            intent.putExtra("HotDrinks", 2)
+            intent.putExtra("tipoProducto", 2)
             startActivity(intent)
 
         }
 
         btnSweet.setOnClickListener{
 
-            var intent: Intent = Intent(this, ProductosActivity::class.java)
-            intent.putExtra("Sweet", 3)
+            intent.putExtra("tipoProducto", 3)
             startActivity(intent)
 
         }
 
         btnSalties.setOnClickListener{
 
-            var intent: Intent = Intent(this, ProductosActivity::class.java)
-            intent.putExtra("Salties", 4)
+            intent.putExtra("tipoProducto", 4)
             startActivity(intent)
 
         }

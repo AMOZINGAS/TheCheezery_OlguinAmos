@@ -6,20 +6,30 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".ProductosActivity">
 
     
     <ImageView
+        android:id="@+id/nombreProducto_img"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/coldbrew"
         />
-    
+
     <ListView
 
         android:id="@+id/listView"
-        android:layout_height="match_parent"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="219dp"
+        android:layout_height="33dp"
+        android:text="menu"
+        android:background="@drawable/round_button"
+        android:textColor="@color/dusty_white"
         />
         
 </LinearLayout>

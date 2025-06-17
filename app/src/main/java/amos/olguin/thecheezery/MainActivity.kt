@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
             getStarted.setOnClickListener{
 
-                var intent: Intent = Intent(this, RegisterActivity::class.java)
+                val intent: Intent = Intent(this, register::class.java)
 
                 startActivity(intent)
 
